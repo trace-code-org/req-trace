@@ -6,6 +6,9 @@
 
 A lightweight **requirements operating system** for AI-assisted project work.
 
+> [!IMPORTANT]
+> This repository moved namespaces. Up to and including v0.5, req-trace was maintained at `github.com/trace-code-org/req-trace`. Starting with v0.6, req-trace is maintained at `github.com/aepps-ch/req-trace`.
+
 Instead of repeating long setup prompts in every project, keep `req-trace/` as a stable submodule and evolve requirements in your project as versioned deltas.
 
 > `req-trace` is the shared rulebook; your project owns the requirements history.
@@ -26,7 +29,7 @@ Instead of repeating long setup prompts in every project, keep `req-trace/` as a
 1. Make sure your project is initialized as a git-repository.
 2. Keep this repository at `req-trace/` of your project
    - Recommended: pin it as a git submodule to a release branch
-   - Example add command: `git submodule add -b release/v0.3 https://github.com/trace-code-org/req-trace.git req-trace`
+   - Example add command: `git submodule add -b release/v0.6 https://github.com/aepps-ch/req-trace.git req-trace`
 3. Copy `req-trace/template.md` as `agents.md` into the root of your project.
 4. Delete the additional-guidelines from the copied agents.md that aren't mentioned explicitly mentioned in your instructions.  
 5. The newly created `agents.md` file must be followed for implementation when using the req-trace flow.
@@ -36,7 +39,7 @@ Instead of repeating long setup prompts in every project, keep `req-trace/` as a
 ## Example prompt for your agent
 
 ```text
-Please implement these requirements with the github.com/trace-code-org/req-trace flow:
+Please implement these requirements with the github.com/aepps-ch/req-trace flow:
 - Build a web app that tracks naps for office cats 🐈
 - Start/stop nap timer per cat
 - Show daily nap leaderboard
@@ -47,7 +50,7 @@ Please implement these requirements with the github.com/trace-code-org/req-trace
 If you are using an agent (like open-claw or codex) and want to use req-trace for your projects, tell your agent this:
 
 **Generic:**  
-> Please install the req-trace skill from `github.com/trace-code-org/req-trace`. 
+> Please install the req-trace skill from `github.com/aepps-ch/req-trace`. 
 
 **Codex:**  
 If you are using codex directly, you should follow this: [setup](codex/codex.md)
@@ -56,6 +59,10 @@ After this instruction, you can always tell your agent to create a project follo
 If a project uses req-trace, the flow will be applied automatically.
 
 ## Breaking changes
+### v0.6: namespace moved
+This project is now maintained at `github.com/aepps-ch/req-trace`.
+Previous releases up to and including v0.5 were maintained at `github.com/trace-code-org/req-trace`.
+
 ### v0.5: extracting guidelines
 You now have to specify inside agents.md (template.md) which implementation-guidelines you wan't to use.
 

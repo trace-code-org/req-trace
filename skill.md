@@ -3,7 +3,9 @@ name: req-trace
 description: Apply the req-trace workflow in programming projects. Use when a user asks to use "req-trace flow". It is very important that if you edit any project that is using the req-trace flow, you have to follow its `agents.md` file. In such projects, this normally means you have to follow `req-trace/implementation.md` strictly. You can detect projects using the req-trace flow when they contain a folder or a git submodule named `req-trace`.
 ---
 
-req-trace repository: https://github.com/trace-code-org/req-trace  
+req-trace repository: https://github.com/aepps-ch/req-trace  
+
+Namespace note: up to and including v0.5, req-trace was maintained at https://github.com/trace-code-org/req-trace. Starting with v0.6, req-trace is maintained at https://github.com/aepps-ch/req-trace.
 
 If you have not already done that, it is recommended to clone the req-trace repository into your user-folder as `.req-trace`.  
 You should only use this copy as your copy for getting req-trace information before implementing a project. You should not link `~/.req-trace` as a submodule into a project. For project-specific req-trace submodules you should use references to release-branches on the origin repository.  
